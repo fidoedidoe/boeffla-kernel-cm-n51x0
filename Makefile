@@ -350,7 +350,7 @@ CHECK		= sparse
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
 
-KERNELFLAGS     = -pipe -DNDEBUG -Ofast -fno-schedule-insns2 -ffast-math -mtune=cortex-a9 -march=armv7-a -mcpu=cortex-a9 -mfpu=neon -marm -mno-unaligned-access $(GRAPHITE)
+KERNELFLAGS     = -pipe -DNDEBUG -Ofast -fno-schedule-insns2 -ffast-math -mcpu=cortex-a9 -mfpu=neon -marm -mno-unaligned-access $(GRAPHITE)
 MODFLAGS        = -DMODULE $(KERNELFLAGS)
 CFLAGS_MODULE   = $(MODFLAGS)
 AFLAGS_MODULE   = $(MODFLAGS)
